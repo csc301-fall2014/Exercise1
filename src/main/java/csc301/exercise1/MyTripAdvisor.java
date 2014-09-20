@@ -10,7 +10,7 @@ public class MyTripAdvisor {
 	}
 	
 	
-	public void addTrainCopmany(TrainCompany trainCompany){
+	public void addTrainCompany(TrainCompany trainCompany){
 		
 	}
 	
