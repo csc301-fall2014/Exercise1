@@ -18,7 +18,7 @@ public class Utils {
 	 * 
 	 * See existing files in src/test/resources for an example of the format. 
 	 */
-	public static TrainCompany createCopmanyFromDataFile(String dataFileName) throws IOException{
+	public static TrainCompany createCompanyFromDataFile(String dataFileName) throws IOException{
 		InputStream in = ClassLoader.getSystemResourceAsStream(dataFileName);
 		BufferedReader br = new BufferedReader(new InputStreamReader(in));
 		

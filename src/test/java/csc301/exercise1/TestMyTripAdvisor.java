@@ -45,8 +45,8 @@ public class TestMyTripAdvisor {
 	@Before
 	public void setUp() throws Exception {
 		// Create TrainCompany instances from data files in the resources folder.
-		fastTrain = Utils.createCopmanyFromDataFile("FastTrain.txt");
-		swiftRail = Utils.createCopmanyFromDataFile("SwiftRail.txt");
+		fastTrain = Utils.createCompanyFromDataFile("FastTrain.txt");
+		swiftRail = Utils.createCompanyFromDataFile("SwiftRail.txt");
 	}
 
 	
