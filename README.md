@@ -1,4 +1,4 @@
-# Exercise1 - Due Sunday, Sept 28, at 10 p.m.#
+# Exercise1 - Due Wednesday, Oct 1, at 10 p.m.#
 
  * [Goals](#goals)
  * [First Steps](#first-steps)
