@@ -1,16 +1,19 @@
 package csc301.exercise1;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class TestMyTripAdvisor {
 
-	static TripAdvisorFactory factory;
+	static ConfigurationFileBasedTripAdvisorFactory factory;
 	
 	
 	@BeforeClass
-	public static void init(){
-		factory = new TripAdvisorFactory();
+	public static void init() throws FileNotFoundException, IOException{
+		factory = new ConfigurationFileBasedTripAdvisorFactory(System.getenv("TEST_TRIP_ADVISOR_CONF"));
 	}
 	
 	
