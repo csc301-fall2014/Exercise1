@@ -24,7 +24,7 @@ public class Utils {
 		
 		// The first line of the file should contain the company's name
 		String line = br.readLine();
-		TrainCompany company = new TrainCompany(line.trim());
+		TrainCompany company = TrainCompany.createInstance(line.trim());
 		
 		// The next lines are expected to be of the format fromStation,toStation,price
 		line = br.readLine();

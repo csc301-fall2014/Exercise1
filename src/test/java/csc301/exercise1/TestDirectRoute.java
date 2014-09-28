@@ -11,7 +11,7 @@ public class TestDirectRoute {
 	// A very basic example of a passing test
 	@Test
 	public void testCreateInstanceWithoutException(){
-		new DirectRoute(new TrainCompany("Via"), Constants.TORONTO, Constants.OTTAWA, 37.5);
+		new DirectRoute(TrainCompany.createInstance("Via"), Constants.TORONTO, Constants.OTTAWA, 37.5);
 	}
 	
 }
