@@ -3,7 +3,7 @@ package csc301.exercise1;
 import java.util.List;
 
 
-public class MyTripAdvisor {
+public class MyTripAdvisor implements TripAdvisor {
 
 	
 	public MyTripAdvisor() {

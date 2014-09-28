@@ -64,7 +64,7 @@ public class TestMyTripAdvisor {
 	
 	@Test(timeout=3000)
 	public void twoRouteTripWhereRoutesAreFromDifferentCompanies() {
-		MyTripAdvisor advisor = new MyTripAdvisor();
+		TripAdvisor advisor = new MyTripAdvisor();
 		advisor.addTrainCompany(fastTrain);
 		advisor.addTrainCompany(swiftRail);
 		
@@ -79,7 +79,7 @@ public class TestMyTripAdvisor {
 	
 	@Test(timeout=3000)
 	public void priceOfTwoRouteTripWhereRoutesAreFromDifferentCompanies() {
-		MyTripAdvisor advisor = new MyTripAdvisor();
+		TripAdvisor advisor = new MyTripAdvisor();
 		advisor.addTrainCompany(fastTrain);
 		advisor.addTrainCompany(swiftRail);
 		
