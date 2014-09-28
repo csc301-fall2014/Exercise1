@@ -8,12 +8,11 @@ import org.junit.Test;
 
 public class TestMyTripAdvisor {
 
-	static ConfigurationFileBasedTripAdvisorFactory factory;
-	
+	static TripAdvisorFactory factory;
 	
 	@BeforeClass
 	public static void init() throws FileNotFoundException, IOException{
-		factory = new ConfigurationFileBasedTripAdvisorFactory(System.getenv("TEST_TRIP_ADVISOR_CONF"));
+		factory = TripAdvisorFactoryUtil.createFactoryFromConf(System.getenv("TEST_TRIP_ADVISOR_CONF"));
 	}
 	
 	
