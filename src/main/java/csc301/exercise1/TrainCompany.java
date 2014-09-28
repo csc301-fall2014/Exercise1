@@ -14,10 +14,10 @@ public class TrainCompany {
 			throw new IllegalArgumentException("There is already a company called '" + name + "'.");
 		}
 		nameToCopmany.put(name, new TrainCompany(name));
-		return getCopmany(name);
+		return getInstance(name);
 	}
 	
-	public static TrainCompany getCopmany(String name){
+	public static TrainCompany getInstance(String name){
 		return nameToCopmany.get(name);
 	}
 	
