@@ -6,9 +6,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import csc301.exercise1.TrainCompany;
+import csc301.exercise1.TrainCompanyInMemoryDAO;
+import csc301.exercise1.TrainCopmanyDAO;
 
 public class Utils {
 
+	
+	private static TrainCopmanyDAO dao = new TrainCompanyInMemoryDAO();
 	
 	/**
 	 * A utility method that creates and returns a TrainCompany isntance based
@@ -24,7 +28,7 @@ public class Utils {
 		
 		// The first line of the file should contain the company's name
 		String line = br.readLine();
-		TrainCompany company = TrainCompany.createInstance(line.trim());
+		TrainCompany company = dao.createInstance(line.trim());
 		
 		// The next lines are expected to be of the format fromStation,toStation,price
 		line = br.readLine();

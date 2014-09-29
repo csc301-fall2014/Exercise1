@@ -1,37 +1,9 @@
 package csc301.exercise1;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
 public class TrainCompany {
 
-	private static Map<String,TrainCompany> nameToCopmany = new HashMap<String, TrainCompany>();
-	
-	public static TrainCompany createInstance(String name){
-		name = normalizeName(name);
-		if(nameToCopmany.containsKey(name)){
-			throw new IllegalArgumentException("There is already a company called '" + name + "'.");
-		}
-		nameToCopmany.put(name, new TrainCompany(name));
-		return getInstance(name);
-	}
-	
-	public static TrainCompany getInstance(String name){
-		return nameToCopmany.get(name);
-	}
-	
-	
-	private static String normalizeName(String name){
-		if(name == null){
-			throw new IllegalArgumentException("No null names please.");
-		}
-		name = name.trim();
-		if(name.isEmpty()){
-			throw new IllegalArgumentException("TrainCopmany's name must contain non-white-space characters.");
-		}
-		return name;
-	}
 	
 	
 	private TrainCompany(String name) {
@@ -96,7 +68,7 @@ public class TrainCompany {
 	
 	
 	public int getDirectRoutesCount(){
-		return getAllDirectRoutes().size();
+		return 0;
 	}
 	
 	
